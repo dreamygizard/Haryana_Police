@@ -1,0 +1,242 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #c5c9e3;
+
+}
+
+/* HEADER */
+header {
+    background-color: #a0a9dd;
+}
+
+
+.head {
+    text-align: center;
+    font-size: x-large;
+
+}
+
+#main-logo {
+    position: relative;
+    margin: 20px;
+    margin-right: 120px;
+    margin-top: 20px;
+}
+
+#india-flag {
+    position: absolute;
+    right: 38px;
+    margin-top: 20px;
+    height: 122px;
+}
+
+
+/* HEADER */
+/* NAVBAR */
+.navb {
+    background-color: rgb(183 200 226);
+    border: 2px solid black;
+    /* margin: 10px 30px; */
+    float: left;
+    width: 100%;
+    
+    z-index: 999;
+
+}
+
+.navb ul {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+.navb ul a {
+    color: rgb(21, 5, 5);
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 32px;
+    padding: 0 70px;
+    font-weight: bold;
+    display: block;
+}
+
+.navb ul li a:hover,
+.navbar ul li a.active {
+    background-color: #c48499;
+    text-decoration: underline;
+    color: white;
+}
+
+.navb ul li {
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 10px;
+
+}
+
+.navb ul ul {
+    position: absolute;
+    background-color: rgb(204, 210, 220);
+    top: 100%;
+    left: 0;
+    display: none;
+    border: 2px solid black;
+    z-index: 3;
+}
+
+.navb ul ul li {
+    float: none;
+    width: 300px;
+
+}
+
+.navb ul ul li a {
+    font-size: 15px;
+}
+
+.navb ul ul ul {
+    left: 100%;
+    top: -2px;
+}
+
+.navb ul li:hover>ul {
+    display: block;
+}
+
+/* NAVBAR */
+/* footer */
+.footer {
+    background-color: #006;
+    width: 100%;
+    height: 100px;
+    position: relative;
+    top: 110%;
+    border-top: 6px solid black;
+    border-radius: 80px 0px 0px 0px;
+}
+
+.fleft {
+    width: 400px;
+    height: 50px;
+    float: left;
+    margin: 25px 0 0 50px
+}
+
+.flmenu {
+    width: 80px;
+    color: #fff;
+    height: 35px;
+    float: left;
+    text-align: center;
+    padding-top: 10px;
+    box-sizing: border-box;
+    margin: 10px 0 0 12px;
+
+
+}
+
+.fright {
+    color: #FFF;
+    width: 400px;
+    height: 50px;
+    float: right;
+    margin: 35px 50px 0 0;
+    text-align: right;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+/* footer */
+/* middle */
+.slider-box{
+    width: 90%;
+    overflow: hidden;
+    margin: 30px auto;
+    position: relative;
+    margin-top: 100px;
+}
+#slider{
+    width: 100%;
+    height: 680px;
+    display: inline-flex;
+    /* border: 5px solid black; */
+    transition: 0.7s;
+}
+#slider img{
+    width: 100%;
+    z-index: -1;
+}
+.indicators{
+    position: absolute;
+    left: 50%;
+    bottom: 80px;
+    transform: translateX(-50%);
+    
+}
+.indicators span{
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.5);
+    
+    
+
+}
+#slide-im1{
+    width: 1200px;
+    height: 650px;
+    margin-right: 200px;
+    margin-left: 195px;
+    /* border: 2px solid black; */
+}
+#slide-im2{
+    /* border: 2px solid black; */
+    width: 1200px;
+    height: 650px;
+    margin-right: 200px;
+    margin-left: 185px;
+}
+#slide-im3{
+    /* border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-left: 200px solid black;
+    border-right: 200px solid black; */
+    width: 1200px;
+    height: 650px;
+    margin-right: 200px;
+    margin-left: 476px;
+}
+#slide-im4{
+    /* border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-left: 200px solid black;
+    border-right: 200px solid black; */
+    width: 1200px;
+    height: 650px;
+    margin-left: 712px;
+}
+.mright
+{
+width: 85%;
+padding:50px 55px 50px 55px;
+box-sizing:border-box;
+text-align:center;
+font-size:20px;
+margin-left:150px;
+}
+.middle{
+    font-family: 'Baloo Bhai 2', cursive;
+}
+/* middle */
+/* slider */
+
+

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIR REGISTRATION</title>
+    <link rel="stylesheet" href="FIR.css">
+    <!-- <link rel="stylesheet" href="fir.php"> -->
+</head>
+
+<body>
+
+    <header>
+        <div class="head">
+            <img src="https://haryanapolice.gov.in/images/header.jpg" alt="head of the website" id="main-logo">
+
+            <img src="https://tse1.mm.bing.net/th?id=OIP.3eLNIT3TIPP_Yz6DDmhBCAHaD-&pid=Api&P=0&w=298&h=160"
+                alt="indian flag" id="india-flag">
+        </div>
+        <div class="navb">
+            <nav>
+                <ul>
+                    <li><a href="1stpage.html">HOME</a></li>
+                    <li><a href="#">ABOUT US <i class="fas fa-caret-down"></i></a>
+                        <ul>
+                            <li><a href="Messge_DGP.html">Message From DGP, Haryana</a></li>
+                            <li><a href="Mission_statement.html">Mission Statement</a></li>
+                            <li><a href="history.html">History</a></li>
+                            <li><a href="police-service.html">Police Service Amendments</a></li>
+                            <li><a href="#">Important Laws <i class="fas fa-caret-right"></i></a>
+                                <ul>
+                                    <li><a href="https://haryanapolice.gov.in/pdf/Motor_Vehicles_%20(Amendment)_%20Act_%202019.pdf"
+                                            target="_blank">Motor Vehicle ACT Amendment(2019)</a></li>
+                                    <li><a href="https://haryanapolice.gov.in/PDF/133%20of%202012.pdf"
+                                            target="_blank">Women Safety Cell</a></li>
+                                    <li><a href="https://haryanapolice.gov.in/PDF/Information%20security%20best%20practices.pdf"
+                                            target="_blank">Cyber Security</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="contactus.html">CONTACT US</a></li>
+                    <li><a href="#">STATUS <i class="fas fa-caret-down"></i></a>
+                        <ul>
+                            <li><a href="firstatus.php">FIR Status</a></li>
+                            <li><a href="FIR-booking.html">FIR Booking</a></li>
+                            <li><a href="criminallog.html">Criminal Logistics</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Account.html">ACCOUNT LOGIN</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="middle-header">
+        <h2>FIR Information</h2>
+    </div>
+
+    <div class="container">
+
+
+        <form class="row g-3" action="/HARYANA_POLICE/fir.php" method="POST">
+            <div class="col-md-6">
+                <div class="row">
+                    <label for="nme">Full Name*</label>
+                    
+                    <div class="col1">
+                        <input type="text" class="form-control" placeholder="Aryan" aria-label="First name" id="nme"
+                            name="nme">
+                    </div>
+                    <label for="number">Number*</label>
+                    <div class="col2">
+                        <input type="number" class="form-control" placeholder="7888392371" aria-label="Last name"
+                            id="number" name="number">
+                    </div>
+                </div>
+                <label for="inputEmail4" class="form-label">Email</label><br>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="taub**@gmail.com" id="email"
+                    name="email">
+            </div>
+            <div class="col-md-6">
+                <label for="street" class="form-label">Room No./Street Name* </label><br>
+                <input type="text" class="form-control" id="street" name="street" placeholder="1209">
+            </div>
+            <div class="col-12">
+                <label for="address" class="form-label">Address* </label><br>
+                <textarea class="form-control" id="address" name="address"
+                    placeholder="Sector-1, Bandra, Mumbai" rows="5" cols="60"></textarea>
+
+            </div>
+            <div class="col-12">
+                <label for="city" class="form-label">City* </label><br>
+                <input type="text" class="form-control" placeholder="Delhi" id="city" name="city">
+            </div>
+            <div class="col-md-6">
+                <label for="state" class="form-label">State* </label><br>
+                <input type="text" class="form-control" id="state" name="state" placeholder="Haryana">
+            </div>
+            <div class="col-md-6">
+                <label for="country" class="form-label">Country* </label><br>
+                <input type="text" class="form-control" id="country" placeholder="India" name="country">
+            </div>
+            <div class="col-md-6">
+                <label for="police" class="form-label">Police Station* </label><br>
+                <input type="text" class="form-control" id="police" placeholder="Sector-17,PKL" name="police">
+            </div>
+            <div class="col-md-2">
+                <label for="pincode" class="form-label">Zip* </label><br>
+                <input type="text" class="form-control" id="pincode" placeholder="134109" name="pincode">
+            </div>
+            <div class="col-md-6">
+                <label for="comp" class="form-label">Complaint* </label><br>
+                <textarea class="form-control" id="comp" name="comp" rows="5" cols="60"></textarea>
+            </div>
+            <div class="col-md-6">
+                <label for="accident" class="form-label">Accident Date And Time* </label><br>
+                <input type="datetime-local" class="form-control" id="accident" name="accident">
+            </div>
+
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        Check me out
+                    </label>
+                </div>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn-btn-primary">Sign in</button>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="fleft">
+                <a href="#">
+                    <div class="flmenu">Home</div>
+                </a>
+                <a href="#">
+                    <div class="flmenu">About Us</div>
+                </a>
+                <a href="#">
+                    <div class="flmenu">Contact Us</div>
+                </a>
+                <a href="#">
+                    <div class="flmenu">Status</div>
+                </a>
+
+            </div>
+            <div class="fright">Copyright &copy; 2022 Haryana Police. All rights reserved</div>
+        </div>
+    </footer>
+</body>
+
+</html>
